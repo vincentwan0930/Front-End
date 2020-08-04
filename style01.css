@@ -1,0 +1,84 @@
+* {                                     /*清除边距*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+ul {                                    /*清除列表样式*/
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:before, .clearfix:after {     /*清除浮动*/
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.all {
+	overflow: hidden;
+}
+.body-left {
+	float: left;
+	height: 100%;
+	background-color: #50a0ff;
+	padding-top: 40px;
+	margin-bottom:-3000px; padding-bottom:3000px;
+}
+h2 {
+	font-size: 40px;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.body-right {
+	float: left;
+	height: 100%;
+	background-color: #f5faff;
+	padding: 20px;
+}
+
+.one-t,
+.two-t,
+.three-t {
+	font-weight: 700;
+	font-size: 24px;
+}
+.one-c,
+.two-c,
+.three-c {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.three-c {
+	margin-bottom: 5px;
+}
+span {
+	display: inline-block;
+	font-weight: 700;
+	color: #444;
+	margin-right: 24px;
+}
+ul li p {
+	display: inline-block;
+	font-weight: 400;
+	margin: 0 10px;
+}
+ul li a {
+	font-weight: 400;
+	margin: 0 10px;
+}
+.three .three-c span,
+.three .three-c p {
+	display: block;
+}
+.three .three-c p {
+	margin: 0;
+}
+.three .three-c span:first-child {
+	margin-bottom: 10px;
+}

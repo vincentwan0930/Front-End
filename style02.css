@@ -1,0 +1,71 @@
+* {                                     /*清除边距*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+ul {                                    /*清除列表样式*/
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:before, .clearfix:after {     /*清除浮动*/
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.body-left {
+	background-color: grey;
+	padding: 20px;
+}
+.body-right {
+	border-bottom: 2px solid lightgrey;
+	border-right: 2px solid lightgrey;
+}
+h2 {
+	color: white;
+	font-size: 20px;
+}
+li {
+	height: 120px;
+	border-bottom: 2px solid lightgrey;
+}
+li:last-child {
+	border-bottom: none;
+}
+.one-t,
+.two-t,
+.three-t {
+	background-color: lightgrey;
+	/*display: inline-block;*/
+	float: left;
+	height: 100%;
+	font-weight: 700;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 120px;
+	border-bottom: 2px solid white;
+}
+.one-c,
+.two-c,
+.three-c {
+	float: left;
+	height: 100%;
+	padding: 15px;
+	font-weight: 700;
+}
+li p,
+li a {
+	display: inline-block;
+	font-weight: 400;
+	margin-left: 8px;
+	margin-right: 22px;
+}
+.three-c span {
+	display: block;
+}
